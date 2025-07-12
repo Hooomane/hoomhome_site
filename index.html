@@ -1,7 +1,38 @@
 <!DOCTYPE html>
-<html>
-  <head><title>HOOMhome</title></head>
-  <body style="margin:0; padding:0; background:#f4f4f4; text-align:center;">
-    <img src="logo.png" alt="HOOMhome" style="max-width:100%; height:auto;" />
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>HOOMhome</title>
+    <style>
+      body {
+        margin: 0;
+        background: #f7f7f7;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh;
+        font-family: sans-serif;
+        color: #333;
+      }
+      img {
+        max-width: 70vw;
+        height: auto;
+      }
+      .text {
+        margin-top: 24px;
+        font-size: 20px;
+        letter-spacing: 1px;
+        animation: fadeIn 2s ease-in-out forwards;
+        opacity: 0;
+      }
+      @keyframes fadeIn {
+        to { opacity: 1; }
+      }
+    </style>
+  </head>
+  <body>
+    <img src="logo.png" alt="HOOMhome Logo" />
+    <div class="text">Coming Soon</div>
   </body>
 </html>
